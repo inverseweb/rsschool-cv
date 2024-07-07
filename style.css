@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #ffcd1e;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 50px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #000000;
+    line-height: 42px;
+}
+
+.header {
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    position: relative;
+    padding: 0 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -5px;
+    width: calc(100% - 24px);
+    height: 2px;
+    background-color: #000000;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.main {
+    margin-bottom: auto;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section {
+    width: calc(50% - 20px);
+    padding: 10px;
+    padding-bottom: 35px;
+}
+
+.section-education,
+.section-english {
+    border-bottom: 0;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.section-profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+}
+
+.pre {
+    padding: 0;
+    margin: 0;
+}
+
+.section-profile-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.main-title {
+    position: relative;
+    padding: 0;
+    text-align: left;
+    color: #000000;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+}
+
+.section-profile-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.section-profile-logo:hover {
+    filter: none;
+}
+
+.section-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.section-item {
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.section-item span {
+    color: #000000;
+}
+
+.section-item a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.5s;
+}
+
+.section-item a:hover {
+    color: #4d2323;
+}
+
+.footer {
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #000000;
+}
+
+.github {
+    color: #000000;
+    text-decoration: none;
+    line-height: 45px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.rss {
+    width: 121px;
+    height: 45px;
+    background-image: url("./assets/svg/rss.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
