@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>cv - Alex Rozhkov</title>
+        <link rel="icon" href="./assets/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container header-container">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+                        <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+                        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                        <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container main-container">
+                <!-- section 1 -->
+                <section class="section section-profile" id="profile">
+                    <img src="./assets/img/avatar.jpg" alt="avatar" class="section-profile-logo" />
+                    <div class="section-profile-title">
+                        <h1 class="section-title main-title">Alex Rozhkov</h1>
+                    </div>
+                </section>
+
+                <!-- section 2 -->
+                <section class="section" id="contacts">
+                    <h2 class="section-title">Contacts</h2>
+                    <ul class="section-list">
+                        <li class="section-item contacts-item">
+                            Email:
+                            <a href="mailto:alexander_rozhkov@icloud.com" title="email">alexander_rozhkov@icloud.com</a>
+                        </li>
+                        <li class="section-item contacts-item">
+                            Github:
+                            <a href="https://github.com/inverseweb" title="github">inverseweb</a>
+                        </li>
+                        <li class="section-item contacts-item">
+                            Telegram:
+                            <a href="https://t.me/bigexcuse" title="github">@bigexcuse</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- section 3 -->
+                <section class="section" id="summary">
+                    <h2 class="section-title">Summary</h2>
+                    <p>
+                        My name is Alexander, I’m 30 years old. I live in the city of Gomel. When I was in college, I wrote websites and I really liked it. Working in different jobs, I was still
+                        interested in Web technology. Quit my job, I took a year off to do something I really like. And here I am...
+                    </p>
+                </section>
+
+                <!-- section 4 -->
+                <section class="section" id="skills">
+                    <h2 class="section-title">Skills</h2>
+                    <ul class="section-list">
+                        <li class="section-item">Web-development:<span> HTML5, CSS3, JavaScript</span></li>
+                        <li class="section-item">Version control:<span> GIT, Github</span></li>
+                        <li class="section-item">Graphics:<span> Figma, Photoshop</span></li>
+                    </ul>
+                </section>
+                <section class="section" id="code">
+                    <h2 class="section-title">Code</h2>
+                    <pre class="pre"><code>function sum(a, b) {
+return a + b;
+}
+let result = sum(1, 2);
+alert(result);
+</code></pre>
+                </section>
+
+                <!-- section 5 -->
+                <section class="section" id="courses">
+                    <h2 class="section-title">Courses</h2>
+                    <ul class="section-list">
+                        <li class="section-item">RSS School</li>
+                    </ul>
+                </section>
+
+                <!-- section 7 -->
+                <section class="section section-education" id="education">
+                    <h2 class="section-title">Education</h2>
+                    <p>Gomel of Commerce and Economics</p>
+                </section>
+
+                <!-- section 8 -->
+                <section class="section section-english" id="english">
+                    <h2 class="section-title">English</h2>
+                    <p>A1 - Pre-Intermediate</p>
+                </section>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <div>
+                    <a href="https://github.com/inverseweb" class="github nav-link">inverseweb</a>
+                </div>
+                <a href="https://rs.school/js/" class="rss"></a>
+            </div>
+        </footer>
+    </body>
+</html>
